@@ -1,3 +1,4 @@
+
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
@@ -5,11 +6,10 @@ from .models import *
 import os
 import sys
 import urllib.request
-from .__code import *
 
 # Create your views here.
 
-
+'''
 def searchbook(request):
     bookcontent = request.GET['bookcontent']
     client_id = "t6FyW7KHzTiC0x5_r2D_"
@@ -28,7 +28,7 @@ def searchbook(request):
         print(type(response_body.decode('utf-8')))
         return HttpResponse(response_body.decode('utf-8'))
     else:
-        return HttpResponse("Error Code:" + rescode)
+        return HttpResponse("Error Code:" + rescode)'''
 
 
 def index(request):
